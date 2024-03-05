@@ -28,12 +28,12 @@ async function validateUser(username) {
 }
 
 
-module.exports = { registerUser, loginUser };
+module.exports = { registerUser, loginUser, validateUser };
 
-// const axios = require('axios');
-//
-// const BASE_URL = 'http://localhost:3000'; // Change this to your server URL
-//
+const axios = require('axios');
+
+const BASE_URL = 'http://localhost:3000'; // Change this to your server URL
+
 // async function registerUser(username, password) {
 //     try {
 //         const response = await axios.post(`${BASE_URL}/register`, { username, password });
@@ -46,6 +46,15 @@ module.exports = { registerUser, loginUser };
 // async function loginUser(username, password) {
 //     try {
 //         const response = await axios.post(`${BASE_URL}/login`, { username, password });
+//         return response.data;
+//     } catch (error) {
+//         throw new Error(error.response.data);
+//     }
+// }
+//
+// async function validateUser(username) {
+//     try {
+//         const response = await axios.post(`${BASE_URL}/validateUser`, { username });
 //         return response.data;
 //     } catch (error) {
 //         throw new Error(error.response.data);

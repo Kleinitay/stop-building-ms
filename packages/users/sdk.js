@@ -30,9 +30,9 @@ async function validateUser(username) {
 
 module.exports = { registerUser, loginUser, validateUser };
 
-const axios = require('axios');
-
-const BASE_URL = 'http://localhost:3000'; // Change this to your server URL
+// const axios = require('axios');
+//
+// const BASE_URL = 'http://localhost:3000'; // Change this to your server URL
 
 // async function registerUser(username, password) {
 //     try {
